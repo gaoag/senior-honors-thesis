@@ -1,0 +1,55 @@
+# list obtained in python script. it's a correct list, deal with it
+valid_msas = c('C1038','C1170','C1206','C1294','C1314','C1374','C1382','C1446','C1630','C1662','C1778','C1934','C2050','C2142','C2478','C2562','C2638','C2710','C2718','C2814','C2962','C3046','C3078','C3118','C3154','C3174','C3282','C3322','C3346','C3458','C3510','C3530','C3562','C3886','C4170','C4190','C4194','C4198','C4410','C4430','C4522','C4614','C4630','C4790','C4974','C1050','C1058','C1226','C1454','C1526','C1594','C1602','C1674','C1698','C1742','C1798','C1814','C2630','C2642','C2662','C2690','C2910','C3062','C3326','C3462','C3654','C3674','C3854','C3946','C3982','C4114','C4118','C4362','C4442','C4606','C4666','C4726','C4854','C1164','C1322','C1686','C1714','C2422','C2466','C2522','C2542','C2586','C2658','C2714','C2920','C3098','C3170','C3290','C3406','C3790','C3798','C4310','C4634','C4702','C4794','C1258','C1401','C1622','C1682','C1786','C1910','C1974','C1978','C2114','C2238','C2506','C2614','C3142','C3190','C3258','C3386','C3498','C3598','C3734','C3830','C4006','C4038','C4098','C4106','C4220','C4266','C4334','C4530','C4622','C4862','C4902','C4950','C1538','C1606','C1670','C1982','C2026','C2106','C2222','C2434','C2554','C2866','C2870','C2894','C3002','C3114','C3134','C3410','C3538','C3890','C3958','C4090','C4154','C4254','C4358','C4418','C4830','C4866','C4890','C1074','C1426','C1943','C2354','C2726','C3370','C3494','C3626','C3786','C3866','C3910','C3938','C3990','C4022','C4142','C4162','C4186','C4390','C4746','C4758','C1078','C1554','C1766','C2150','C2178','C2218','C2414','C2734','C2790','C2946','C3642','C3710','C3974','C4270','C4578','C4582','C1118','C1202','C1398','C1746','C1790','C1930','C2306','C2346','C2426','C2502','C3698','C3930','C3934','C3966','C4870','C4970','C1042','C1090','C1254','C2074','C2458','C2934','C3762','C4174','C4550','C4814','C4918','C1302','C1518','C1950','C3030','C3310','C3334','C4222','C4738','C4934','C1390','C2002','C2290','C2442','C2594','C2682','C2942','C3108','C3822','C4058','C4494','C1486','C1658','C1914','C1966','C2130','C2182','C2250','C2402','C2518','C2774','C3014','C3242','C3374','C3378','C4014','C4202','C4234','C4414','C4506','C4826','C1150','C1242','C1402','C1870','C2010','C2166','C3102','C3566','C3834','C4034','C4670','C1888','C1946','C2486','C2810','C2874','C3482','C4166','C1018','C1110','C1338','C1346','C1410','C1730','C2762','C3278','C4654','C4722','C1702','C2550','C2698','C2750','C2778','C2842','C2954','C3584','C3650','C4214','C4546','C2134','C2254','C2358','C2802','C2970','C3366','C4150','C4554','C4966','C1298','C2252','C2786','C2918','C3490','C4406','C4470','C1146','C1858','C1906','C2526','C3186','C3746','C4378','C4652','C4730','C1450','C1694','C2266','C2342','C3070','C3146','C3610','C3894','C3954','C1054','C2022','C2390','C2598','C2798','C4042','C4268','C4942','C1126','C1474','C3086','C3678','C4422','C4594','C1262','C1378','C1550','C1618','C1918','C2450','C2994','C3614','C3806','C4110','C4330','C4806','C1270','C1654','C1782','C2202','C1210','C1568','C2094','C2214','C3034','C3354','C3915','C4066','C1154','C1222','C2454','C2902','C3314','C4210','C2070','C2242','C2974','C2982','C3474','C1102','C1598','C1802','C2430','C2706','C3622','C4342','C4962')
+
+treated_msas = c('C4194', 'C4266', 'C4162', 'C4174', 'C1450', 'C3070', 'C2642', 'C1698', 'C1658', 'C1146', 'C3830', 'C2706', 'C1206', 'C4790', 'C1446', 'C4594')
+supercomputing_msas = c('C2706', 'C4174', 'C1658', 'C1450', 'C3830')
+regional_msas = c('C4194', 'C4266', 'C4162', 'C3070', 'C2642', 'C1698', 'C1146', 'C1206', 'C4790', 'C1446', 'C4594')
+
+msa_df = read.csv('../msa_files/panel_51_msa_WITH_NEAREST.csv', header=TRUE)
+
+
+msa_df$interact_1990 = ifelse(msa_df$year==1990, 0, msa_df$nearest_dist)
+msa_df$interact_1991 = ifelse(msa_df$year==1991, as.numeric(msa_df$nearest_dist), 0) 
+msa_df$interact_1992 = ifelse(msa_df$year==1992, as.numeric(msa_df$nearest_dist), 0) 
+msa_df$interact_1993 = ifelse(msa_df$year==1993, as.numeric(msa_df$nearest_dist), 0) 
+msa_df$interact_1994 = ifelse(msa_df$year==1994, as.numeric(msa_df$nearest_dist), 0) 
+msa_df$interact_1996 = ifelse(msa_df$year==1996, as.numeric(msa_df$nearest_dist), 0) 
+msa_df$interact_1997 = ifelse(msa_df$year==1997, as.numeric(msa_df$nearest_dist), 0) 
+msa_df$interact_1998 = ifelse(msa_df$year==1998, as.numeric(msa_df$nearest_dist), 0) 
+msa_df$interact_1999 = ifelse(msa_df$year==1999, as.numeric(msa_df$nearest_dist), 0) 
+msa_df$interact_2000 = ifelse(msa_df$year==2000, as.numeric(msa_df$nearest_dist), 0) 
+msa_df$interact_2001 = ifelse(msa_df$year==2001, as.numeric(msa_df$nearest_dist), 0) 
+msa_df$interact_2002 = ifelse(msa_df$year==2002, as.numeric(msa_df$nearest_dist), 0) 
+msa_df$interact_2003 = ifelse(msa_df$year==2003, as.numeric(msa_df$nearest_dist), 0) 
+msa_df$interact_2004 = ifelse(msa_df$year==2004,as.numeric(msa_df$nearest_dist), 0) 
+msa_df$interact_2005 = ifelse(msa_df$year==2005, as.numeric(msa_df$nearest_dist), 0) 
+msa_df$interact_2006 = ifelse(msa_df$year==2006, as.numeric(msa_df$nearest_dist), 0) 
+msa_df$interact_2007 = ifelse(msa_df$year==2007, as.numeric(msa_df$nearest_dist), 0) 
+msa_df$interact_2008 = ifelse(msa_df$year==2008, as.numeric(msa_df$nearest_dist), 0) 
+msa_df$interact_2009 = ifelse(msa_df$year==2009, as.numeric(msa_df$nearest_dist), 0) 
+msa_df$interact_2010 = ifelse(msa_df$year==2010, as.numeric(msa_df$nearest_dist), 0) 
+msa_df$interact_2011 = ifelse(msa_df$year==2011, as.numeric(msa_df$nearest_dist), 0) 
+msa_df$interact_2012 = ifelse(msa_df$year==2012, as.numeric(msa_df$nearest_dist), 0) 
+msa_df$interact_2013 = ifelse(msa_df$year==2013,as.numeric(msa_df$nearest_dist), 0)  
+msa_df$interact_2014 = ifelse(msa_df$year==2014, as.numeric(msa_df$nearest_dist), 0) 
+msa_df$interact_2015 = ifelse(msa_df$year==2015, as.numeric(msa_df$nearest_dist), 0) 
+msa_df$interact_2016 = ifelse(msa_df$year==2016, as.numeric(msa_df$nearest_dist), 0)  
+msa_df$interact_2017 = ifelse(msa_df$year==2017, as.numeric(msa_df$nearest_dist), 0) 
+msa_df$interact_2018 = ifelse(msa_df$year==2018, as.numeric(msa_df$nearest_dist), 0) 
+
+
+msa_df = subset(msa_df, area_fips %in% valid_msas)
+
+#filter out 1995 to elim multicollinearity
+msa_df = subset(msa_df, year!=1995)
+
+msa_df = subset(msa_df, nearest_dist <= 100)
+
+msa_df$gtfe = with(msa_df, paste0(year, nearest_location))
+
+
+pay_distance = plm(lq_avg_annual_pay ~ interact_1990 + interact_1991 + interact_1992 + interact_1993 + interact_1994 + interact_1996
+                   + interact_1997 + interact_1998 + interact_1999 + interact_2000 + interact_2001 + interact_2002 +
+                     interact_2003 + interact_2004 + interact_2005 + interact_2006 + interact_2007 + interact_2008 +
+                     interact_2009 + interact_2010 + interact_2011 + interact_2012 + interact_2013 + interact_2014 +
+                     interact_2015 + interact_2016 + interact_2017 + interact_2018, data = msa_df, effect="twoway", index=c('gtfe', 'area_fips'))

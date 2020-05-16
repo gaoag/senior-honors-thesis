@@ -1,0 +1,26 @@
+{
+    "collab_server" : "",
+    "contents" : "",
+    "created" : 1589416279340.000,
+    "dirty" : false,
+    "encoding" : "UTF-8",
+    "folds" : "",
+    "hash" : "0",
+    "id" : "447B95A3",
+    "lastKnownWriteTime" : 1589444986,
+    "last_content_update" : 1589444986775,
+    "path" : "~/Documents/thesis/R_Files/pooled_with_fixed_effects.R",
+    "project_path" : "pooled_with_fixed_effects.R",
+    "properties" : {
+        "cursorPosition" : "16,3",
+        "scrollLine" : "10",
+        "tempName" : "Untitled2"
+    },
+    "read_only" : false,
+    "read_only_alternatives" : [
+    ],
+    "relative_order" : 3,
+    "source_on_save" : false,
+    "source_window" : "",
+    "type" : "r_source"
+}

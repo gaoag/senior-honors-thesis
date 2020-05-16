@@ -1,0 +1,11 @@
+{
+    "dialog-state" : {
+        "caseSensitive" : false,
+        "filePatterns" : [
+        ],
+        "path" : "",
+        "projectRelative" : true,
+        "query" : "lq_emplvl_51_msa",
+        "regex" : false
+    }
+}

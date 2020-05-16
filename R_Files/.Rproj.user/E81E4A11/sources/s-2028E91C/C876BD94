@@ -1,0 +1,26 @@
+{
+    "collab_server" : "",
+    "contents" : "",
+    "created" : 1589244144572.000,
+    "dirty" : false,
+    "encoding" : "UTF-8",
+    "folds" : "",
+    "hash" : "0",
+    "id" : "C876BD94",
+    "lastKnownWriteTime" : 1589432729,
+    "last_content_update" : 1589432729385,
+    "path" : "~/Documents/thesis/R_Files/pooled_models.R",
+    "project_path" : "pooled_models.R",
+    "properties" : {
+        "cursorPosition" : "89,0",
+        "scrollLine" : "71",
+        "tempName" : "Untitled2"
+    },
+    "read_only" : false,
+    "read_only_alternatives" : [
+    ],
+    "relative_order" : 2,
+    "source_on_save" : false,
+    "source_window" : "",
+    "type" : "r_source"
+}

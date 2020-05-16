@@ -1,0 +1,3 @@
+]0;~/Documents/thesis/R_Files[?1034hAlexs-MacBook-Pro-9:R_Files gaoag$ devtools::install_github("hafen/housingData")
+bash: syntax error near unexpected token `"hafen/housingData"'
+]0;~/Documents/thesis/R_FilesAlexs-MacBook-Pro-9:R_Files gaoag$ 
