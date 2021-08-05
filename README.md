@@ -1,8 +1,9 @@
 # senior-honors-thesis
-All the code used to generate the results in the paper is here (albeit, messy and unorganized). Paper is Will organize this into an easy-to-replicate format at some point, hopefully.
+All the code used to generate the results in the paper is here (albeit, messy and unorganized). Paper is titled "senior thesis.pdf" in the repo. Will organize this into an easy-to-replicate format at some point, hopefully.
 
 Evolution of the internet: a brief explainer
-![The Evolution of the Internet](https://imgur.com/DPFqzFU)
+
+![The Evolution of the Internet](https://i.imgur.com/DPFqzFU.png)
 
 
 Appendix stuff:
