@@ -1,8 +1,9 @@
 # senior-honors-thesis
-All the code used to generate the results in the paper is here (albeit, messy and unorganized). Will organize this into an easy-to-replicate format at some point, hopefully.
+All the code used to generate the results in the paper is here (albeit, messy and unorganized). Paper is Will organize this into an easy-to-replicate format at some point, hopefully.
 
+Evolution of the internet: a brief explainer
+![The Evolution of the Internet](https://imgur.com/DPFqzFU)
 
-![Explainer of the Internet](https://drive.google.com/file/d/1D_fWDp0VWmZ7uL1vGAdaiyldUDEBK_VY/view?usp=sharing)
 
 Appendix stuff:
 - event-study-graphs contains all the graphs of the event study regressions, as well as an RData file containing all the coefficients. The RData file can also be found in /R_files/event_studies.RData and loaded into an R environment. 
